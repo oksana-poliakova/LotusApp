@@ -15,7 +15,7 @@ final class WelcomeViewController: UIViewController {
     private let welcomeDescriptionLabel = UILabel()
     private let signupButton = UIButton()
     private let facebookButton = UIButton()
-    private let buttonsStackView = UIStackView()
+    private lazy var buttonsStackView = UIStackView(arrangedSubviews: [facebookButton, signupButton], axis: .vertical, spacing: 30, distribution: .fill, aligment: .fill)
     
     // MARK: - Init
     
@@ -63,16 +63,6 @@ final class WelcomeViewController: UIViewController {
         facebookButton.setTitle("Continue With Facebook", for: .normal)
         facebookButton.titleLabel?.textColor = AppColors.lightGray
         facebookButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
-        
-        /// StackView with buttons
-        buttonsStackView.axis = .vertical
-        buttonsStackView.distribution = .fill
-        buttonsStackView.spacing = 40
-        buttonsStackView.alignment = .fill
-        
-        [signupButton, facebookButton].forEach {
-            buttonsStackView.addArrangedSubview($0)
-        }
         
         /// Appearance
         [welcomeImageView, welcomeTitleLabel, welcomeDescriptionLabel, buttonsStackView].forEach {
