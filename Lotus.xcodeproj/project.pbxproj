@@ -11,7 +11,8 @@
 		A13FFB352854D5D6004F6E5A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13FFB342854D5D6004F6E5A /* AppCoordinator.swift */; };
 		A13FFB372854E339004F6E5A /* WelcomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13FFB362854E339004F6E5A /* WelcomeCoordinator.swift */; };
 		A13FFB392854E4B0004F6E5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13FFB382854E4B0004F6E5A /* SceneDelegate.swift */; };
-		A13FFB3C28560CFB004F6E5A /* Label+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13FFB3B28560CFB004F6E5A /* Label+Extensions.swift */; };
+		A13FFBFE28562466004F6E5A /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13FFBFC28562466004F6E5A /* UILabel+Extensions.swift */; };
+		A13FFBFF28562466004F6E5A /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13FFBFD28562466004F6E5A /* UIStackView+Extensions.swift */; };
 		A1F4751328549D0800C26658 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F4751228549D0800C26658 /* AppDelegate.swift */; };
 		A1F4751728549D0800C26658 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F4751628549D0800C26658 /* WelcomeViewController.swift */; };
 		A1F4751D28549D0800C26658 /* Lotus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1F4751B28549D0800C26658 /* Lotus.xcdatamodeld */; };
@@ -25,7 +26,8 @@
 		A13FFB342854D5D6004F6E5A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		A13FFB362854E339004F6E5A /* WelcomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeCoordinator.swift; sourceTree = "<group>"; };
 		A13FFB382854E4B0004F6E5A /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A13FFB3B28560CFB004F6E5A /* Label+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label+Extensions.swift"; sourceTree = "<group>"; };
+		A13FFBFC28562466004F6E5A /* UILabel+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
+		A13FFBFD28562466004F6E5A /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
 		A1F4750F28549D0800C26658 /* Lotus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lotus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F4751228549D0800C26658 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1F4751628549D0800C26658 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +52,8 @@
 		A13FFB3A28560CE6004F6E5A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				A13FFB3B28560CFB004F6E5A /* Label+Extensions.swift */,
+				A13FFBFC28562466004F6E5A /* UILabel+Extensions.swift */,
+				A13FFBFD28562466004F6E5A /* UIStackView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -218,11 +221,12 @@
 			files = (
 				A1F4751728549D0800C26658 /* WelcomeViewController.swift in Sources */,
 				A1F4751D28549D0800C26658 /* Lotus.xcdatamodeld in Sources */,
+				A13FFBFE28562466004F6E5A /* UILabel+Extensions.swift in Sources */,
 				A13FFB352854D5D6004F6E5A /* AppCoordinator.swift in Sources */,
 				A13FFB372854E339004F6E5A /* WelcomeCoordinator.swift in Sources */,
 				A13FFB332854D5CA004F6E5A /* Coordinator.swift in Sources */,
 				A1F4751328549D0800C26658 /* AppDelegate.swift in Sources */,
-				A13FFB3C28560CFB004F6E5A /* Label+Extensions.swift in Sources */,
+				A13FFBFF28562466004F6E5A /* UIStackView+Extensions.swift in Sources */,
 				A1F475322854A20400C26658 /* AppColors.swift in Sources */,
 				A13FFB392854E4B0004F6E5A /* SceneDelegate.swift in Sources */,
 			);
