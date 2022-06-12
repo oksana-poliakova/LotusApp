@@ -7,25 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A13FFB332854D5CA004F6E5A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13FFB322854D5CA004F6E5A /* Coordinator.swift */; };
+		A13FFB352854D5D6004F6E5A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13FFB342854D5D6004F6E5A /* AppCoordinator.swift */; };
+		A13FFB372854E339004F6E5A /* WelcomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13FFB362854E339004F6E5A /* WelcomeCoordinator.swift */; };
+		A13FFB392854E4B0004F6E5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13FFB382854E4B0004F6E5A /* SceneDelegate.swift */; };
+		A13FFB3C28560CFB004F6E5A /* Label+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13FFB3B28560CFB004F6E5A /* Label+Extensions.swift */; };
 		A1F4751328549D0800C26658 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F4751228549D0800C26658 /* AppDelegate.swift */; };
-		A1F4751528549D0800C26658 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F4751428549D0800C26658 /* SceneDelegate.swift */; };
-		A1F4751728549D0800C26658 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F4751628549D0800C26658 /* ViewController.swift */; };
-		A1F4751A28549D0800C26658 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F4751828549D0800C26658 /* Main.storyboard */; };
+		A1F4751728549D0800C26658 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F4751628549D0800C26658 /* WelcomeViewController.swift */; };
 		A1F4751D28549D0800C26658 /* Lotus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1F4751B28549D0800C26658 /* Lotus.xcdatamodeld */; };
 		A1F4751F28549D0900C26658 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F4751E28549D0900C26658 /* Assets.xcassets */; };
 		A1F4752228549D0900C26658 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F4752028549D0900C26658 /* LaunchScreen.storyboard */; };
+		A1F475322854A20400C26658 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F475312854A20400C26658 /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A13FFB322854D5CA004F6E5A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		A13FFB342854D5D6004F6E5A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		A13FFB362854E339004F6E5A /* WelcomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeCoordinator.swift; sourceTree = "<group>"; };
+		A13FFB382854E4B0004F6E5A /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A13FFB3B28560CFB004F6E5A /* Label+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label+Extensions.swift"; sourceTree = "<group>"; };
 		A1F4750F28549D0800C26658 /* Lotus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lotus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F4751228549D0800C26658 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A1F4751428549D0800C26658 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A1F4751628549D0800C26658 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A1F4751928549D0800C26658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1F4751628549D0800C26658 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		A1F4751C28549D0800C26658 /* Lotus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lotus.xcdatamodel; sourceTree = "<group>"; };
 		A1F4751E28549D0900C26658 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1F4752128549D0900C26658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1F4752328549D0900C26658 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1F475312854A20400C26658 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A13FFB3A28560CE6004F6E5A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A13FFB3B28560CFB004F6E5A /* Label+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		A1F4750628549D0800C26658 = {
 			isa = PBXGroup;
 			children = (
@@ -58,16 +74,76 @@
 		A1F4751128549D0800C26658 /* Lotus */ = {
 			isa = PBXGroup;
 			children = (
-				A1F4751228549D0800C26658 /* AppDelegate.swift */,
-				A1F4751428549D0800C26658 /* SceneDelegate.swift */,
-				A1F4751628549D0800C26658 /* ViewController.swift */,
-				A1F4751828549D0800C26658 /* Main.storyboard */,
-				A1F4751E28549D0900C26658 /* Assets.xcassets */,
-				A1F4752028549D0900C26658 /* LaunchScreen.storyboard */,
+				A1F4752E28549E4B00C26658 /* Application */,
+				A1F4752A28549DE800C26658 /* Coordinators */,
+				A1F4752928549DDE00C26658 /* Managers */,
+				A1F4752D28549E2100C26658 /* Models */,
+				A1F4752C28549E0100C26658 /* ViewModels */,
+				A1F4752B28549DF700C26658 /* ViewControllers */,
+				A1F475302854A00900C26658 /* Resources */,
+				A13FFB3A28560CE6004F6E5A /* Extensions */,
 				A1F4752328549D0900C26658 /* Info.plist */,
 				A1F4751B28549D0800C26658 /* Lotus.xcdatamodeld */,
 			);
 			path = Lotus;
+			sourceTree = "<group>";
+		};
+		A1F4752928549DDE00C26658 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		A1F4752A28549DE800C26658 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				A13FFB322854D5CA004F6E5A /* Coordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		A1F4752B28549DF700C26658 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A1F4751628549D0800C26658 /* WelcomeViewController.swift */,
+				A13FFB362854E339004F6E5A /* WelcomeCoordinator.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A1F4752C28549E0100C26658 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A1F4752D28549E2100C26658 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A1F4752E28549E4B00C26658 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A13FFB342854D5D6004F6E5A /* AppCoordinator.swift */,
+				A1F4751228549D0800C26658 /* AppDelegate.swift */,
+				A13FFB382854E4B0004F6E5A /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A1F475302854A00900C26658 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A1F475312854A20400C26658 /* AppColors.swift */,
+				A1F4752028549D0900C26658 /* LaunchScreen.storyboard */,
+				A1F4751E28549D0900C26658 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +206,6 @@
 			files = (
 				A1F4752228549D0900C26658 /* LaunchScreen.storyboard in Resources */,
 				A1F4751F28549D0900C26658 /* Assets.xcassets in Resources */,
-				A1F4751A28549D0800C26658 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,24 +216,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1F4751728549D0800C26658 /* ViewController.swift in Sources */,
+				A1F4751728549D0800C26658 /* WelcomeViewController.swift in Sources */,
 				A1F4751D28549D0800C26658 /* Lotus.xcdatamodeld in Sources */,
+				A13FFB352854D5D6004F6E5A /* AppCoordinator.swift in Sources */,
+				A13FFB372854E339004F6E5A /* WelcomeCoordinator.swift in Sources */,
+				A13FFB332854D5CA004F6E5A /* Coordinator.swift in Sources */,
 				A1F4751328549D0800C26658 /* AppDelegate.swift in Sources */,
-				A1F4751528549D0800C26658 /* SceneDelegate.swift in Sources */,
+				A13FFB3C28560CFB004F6E5A /* Label+Extensions.swift in Sources */,
+				A1F475322854A20400C26658 /* AppColors.swift in Sources */,
+				A13FFB392854E4B0004F6E5A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A1F4751828549D0800C26658 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A1F4751928549D0800C26658 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A1F4752028549D0900C26658 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +368,6 @@
 				INFOPLIST_FILE = Lotus/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -324,7 +395,6 @@
 				INFOPLIST_FILE = Lotus/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
