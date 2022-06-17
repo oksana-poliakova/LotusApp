@@ -13,7 +13,7 @@ final class WelcomeViewController: UIViewController {
     private let welcomeImageView = UIImageView()
     private let welcomeTitleLabel = UILabel()
     private let welcomeDescriptionLabel = UILabel()
-    private let signupButton = UIButton()
+    private let signupButton = MainAppButton()
     private let facebookButton = UIButton()
     private lazy var buttonsStackView = UIStackView(arrangedSubviews: [facebookButton, signupButton], axis: .vertical, spacing: 30, distribution: .fill, aligment: .fill)
     
@@ -54,11 +54,7 @@ final class WelcomeViewController: UIViewController {
         welcomeDescriptionLabel.textAlignment = .center
         
         /// Buttons
-        signupButton.backgroundColor = AppColors.lightGreen
         signupButton.setTitle("Sign Up With Email", for: .normal)
-        signupButton.setTitleColor(AppColors.black, for: .normal)
-        signupButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
-        signupButton.layer.cornerRadius = 8
         
         facebookButton.setTitle("Continue With Facebook", for: .normal)
         facebookButton.titleLabel?.textColor = AppColors.lightGray

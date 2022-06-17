@@ -13,6 +13,10 @@
 		A13FFB392854E4B0004F6E5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13FFB382854E4B0004F6E5A /* SceneDelegate.swift */; };
 		A13FFBFE28562466004F6E5A /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13FFBFC28562466004F6E5A /* UILabel+Extensions.swift */; };
 		A13FFBFF28562466004F6E5A /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13FFBFD28562466004F6E5A /* UIStackView+Extensions.swift */; };
+		A15FFF22285CE33200D61898 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15FFF21285CE33200D61898 /* SignUpViewController.swift */; };
+		A15FFF26285CEA8300D61898 /* UITextFields+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15FFF25285CEA8300D61898 /* UITextFields+Extensions.swift */; };
+		A15FFF2A285CEC2700D61898 /* MainAppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15FFF29285CEC2700D61898 /* MainAppButton.swift */; };
+		A15FFF2C285CEE2600D61898 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15FFF2B285CEE2600D61898 /* RoundedTextField.swift */; };
 		A1F4751328549D0800C26658 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F4751228549D0800C26658 /* AppDelegate.swift */; };
 		A1F4751728549D0800C26658 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F4751628549D0800C26658 /* WelcomeViewController.swift */; };
 		A1F4751D28549D0800C26658 /* Lotus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1F4751B28549D0800C26658 /* Lotus.xcdatamodeld */; };
@@ -28,6 +32,10 @@
 		A13FFB382854E4B0004F6E5A /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A13FFBFC28562466004F6E5A /* UILabel+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
 		A13FFBFD28562466004F6E5A /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
+		A15FFF21285CE33200D61898 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A15FFF25285CEA8300D61898 /* UITextFields+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextFields+Extensions.swift"; sourceTree = "<group>"; };
+		A15FFF29285CEC2700D61898 /* MainAppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppButton.swift; sourceTree = "<group>"; };
+		A15FFF2B285CEE2600D61898 /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
 		A1F4750F28549D0800C26658 /* Lotus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lotus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F4751228549D0800C26658 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1F4751628549D0800C26658 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -54,8 +62,26 @@
 			children = (
 				A13FFBFC28562466004F6E5A /* UILabel+Extensions.swift */,
 				A13FFBFD28562466004F6E5A /* UIStackView+Extensions.swift */,
+				A15FFF25285CEA8300D61898 /* UITextFields+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A15FFF27285CEABB00D61898 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A15FFF28285CEB2E00D61898 /* View */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A15FFF28285CEB2E00D61898 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A15FFF29285CEC2700D61898 /* MainAppButton.swift */,
+				A15FFF2B285CEE2600D61898 /* RoundedTextField.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		A1F4750628549D0800C26658 = {
@@ -78,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				A1F4752E28549E4B00C26658 /* Application */,
+				A15FFF27285CEABB00D61898 /* Utilities */,
 				A1F4752A28549DE800C26658 /* Coordinators */,
 				A1F4752928549DDE00C26658 /* Managers */,
 				A1F4752D28549E2100C26658 /* Models */,
@@ -111,6 +138,7 @@
 			children = (
 				A1F4751628549D0800C26658 /* WelcomeViewController.swift */,
 				A13FFB362854E339004F6E5A /* WelcomeCoordinator.swift */,
+				A15FFF21285CE33200D61898 /* SignUpViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -219,14 +247,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A15FFF22285CE33200D61898 /* SignUpViewController.swift in Sources */,
 				A1F4751728549D0800C26658 /* WelcomeViewController.swift in Sources */,
 				A1F4751D28549D0800C26658 /* Lotus.xcdatamodeld in Sources */,
+				A15FFF26285CEA8300D61898 /* UITextFields+Extensions.swift in Sources */,
 				A13FFBFE28562466004F6E5A /* UILabel+Extensions.swift in Sources */,
+				A15FFF2A285CEC2700D61898 /* MainAppButton.swift in Sources */,
 				A13FFB352854D5D6004F6E5A /* AppCoordinator.swift in Sources */,
 				A13FFB372854E339004F6E5A /* WelcomeCoordinator.swift in Sources */,
 				A13FFB332854D5CA004F6E5A /* Coordinator.swift in Sources */,
 				A1F4751328549D0800C26658 /* AppDelegate.swift in Sources */,
 				A13FFBFF28562466004F6E5A /* UIStackView+Extensions.swift in Sources */,
+				A15FFF2C285CEE2600D61898 /* RoundedTextField.swift in Sources */,
 				A1F475322854A20400C26658 /* AppColors.swift in Sources */,
 				A13FFB392854E4B0004F6E5A /* SceneDelegate.swift in Sources */,
 			);

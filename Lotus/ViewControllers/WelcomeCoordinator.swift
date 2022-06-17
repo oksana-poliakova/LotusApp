@@ -15,6 +15,6 @@ final class WelcomeCoordinator: Coordinator {
     }
     
     func start() {
-        print("Super")
+        print("")
     }
 }
