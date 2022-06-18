@@ -1,13 +1,13 @@
 //
-//  WelcomeCoordinator.swift
+//  SignUpCoordinator.swift
 //  Lotus
 //
-//  Created by Oksana Poliakova on 11.06.2022.
+//  Created by Oksana Poliakova on 18.06.2022.
 //
 
 import UIKit
 
-final class WelcomeCoordinator: Coordinator {
+final class SignUpCoordinator: Coordinator {
     var navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {
@@ -15,6 +15,7 @@ final class WelcomeCoordinator: Coordinator {
     }
     
     func start() {
-        print("")
+        let vc = LoginViewController()
+        navigationController.pushViewController(vc, animated: true)
     }
 }

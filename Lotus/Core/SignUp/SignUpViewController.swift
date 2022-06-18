@@ -35,6 +35,7 @@ class SignUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
     }
     
     // MARK: - Setup UI
@@ -46,22 +47,34 @@ class SignUpViewController: UIViewController {
         signupImageView.image = UIImage(named: "travelFamily")
         signupImageView.contentMode = UIView.ContentMode.scaleAspectFill
         
-        loginLabel.textColor = .gray
-        loginLabel.font = UIFont.boldSystemFont(ofSize: 14)
+        /// Text fields
+        emailTextField.placeholder = "Please enter your email"
+        passwordTextField.placeholder = "Please enter your password"
+        confirmPasswordTextField.placeholder = "Please confirm your password"
+        
+        /// Label
+        loginLabel.text = "Already member?"
+        loginLabel.textColor = AppColors.gray
+        loginLabel.font = UIFont.boldSystemFont(ofSize: 16)
+        
+        /// Buttons
+        signupButton.setTitle("Sign Up", for: .normal)
         
         loginButton.setTitle("Login", for: .normal)
         loginButton.titleLabel?.textColor = .lightGray
-        loginButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
+        loginButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
+        loginButton.addTarget(self, action: #selector(tapActionButton), for: .touchUpInside)
         
         /// Appearance
-        [signupImageView, signupFieldsStackView, loginStackView].forEach {
+        [signupImageView, signupFieldsStackView, loginStackView, signupButton].forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
             view.addSubview($0)
         }
-        
+       
         /// Constraints
         NSLayoutConstraint.activate([
-            signupImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 50),
+            signupImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
+            signupImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
             signupImageView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0),
             
             signupFieldsStackView.topAnchor.constraint(equalTo: signupImageView.bottomAnchor, constant: 50),
@@ -71,9 +84,22 @@ class SignUpViewController: UIViewController {
             signupButton.topAnchor.constraint(equalTo: signupFieldsStackView.bottomAnchor, constant: 20),
             signupButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             signupButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            signupButton.heightAnchor.constraint(equalToConstant: 50),
+            
+            emailTextField.heightAnchor.constraint(equalToConstant: 50),
+            passwordTextField.heightAnchor.constraint(equalTo: emailTextField.heightAnchor),
+            confirmPasswordTextField.heightAnchor.constraint(equalTo: emailTextField.heightAnchor),
             
             loginStackView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50),
             loginStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
+    }
+    
+    // MARK: - Actions
+    
+    @objc func tapActionButton() {
+        guard let navigationController = navigationController else { return }
+        
+        SignUpCoordinator(navigationController: navigationController).start()
     }
 }

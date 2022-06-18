@@ -42,6 +42,7 @@ final class WelcomeViewController: UIViewController {
         welcomeImageView.image = UIImage(named: "traveller")
         welcomeImageView.contentMode = UIView.ContentMode.scaleAspectFill
         
+        /// Labels
         welcomeTitleLabel.text = "Welcome"
         welcomeTitleLabel.font = UIFont.boldSystemFont(ofSize: 24)
         welcomeTitleLabel.textColor = AppColors.lightGray
@@ -55,6 +56,7 @@ final class WelcomeViewController: UIViewController {
         
         /// Buttons
         signupButton.setTitle("Sign Up With Email", for: .normal)
+        signupButton.addTarget(self, action: #selector(tapActionButton), for: .touchUpInside)
         
         facebookButton.setTitle("Continue With Facebook", for: .normal)
         facebookButton.titleLabel?.textColor = AppColors.lightGray
@@ -69,6 +71,7 @@ final class WelcomeViewController: UIViewController {
         /// Constraints
         NSLayoutConstraint.activate([
             welcomeImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 50),
+            welcomeImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
             welcomeImageView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0),
             
             welcomeTitleLabel.topAnchor.constraint(equalTo: welcomeImageView.bottomAnchor, constant: 50),
@@ -86,6 +89,12 @@ final class WelcomeViewController: UIViewController {
         ])
     }
     
+    // MARK: - Actions
+    
+    @objc func tapActionButton() {
+        guard let navigationController = navigationController else { return }
+        
+        WelcomeCoordinator(navigationController: navigationController).start()
+    }
 
 }
-
