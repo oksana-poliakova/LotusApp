@@ -16,6 +16,9 @@ class ForgotPasswordViewController: UIViewController {
     private let forgotDescription = UILabel()
     private let emailTextField = RoundedTextField(type: .gray)
     private let sendButton = MainAppButton()
+    private let checkMailView = UIView()
+    private let checkMailLabel = UILabel()
+    private let doneButton = MainAppButton()
     
     // MARK: - Init
     
@@ -40,6 +43,10 @@ class ForgotPasswordViewController: UIViewController {
        
         view.backgroundColor = AppColors.darkBlue
         
+        checkMailView.alpha = 0.4
+        checkMailView.isHidden = true
+                
+        /// Image
         forgotPassImageView.image = UIImage(named: "travelFamily")
         forgotPassImageView.contentMode = UIView.ContentMode.scaleAspectFill
         
@@ -54,12 +61,18 @@ class ForgotPasswordViewController: UIViewController {
             $0.textColor = AppColors.white
         }
         
+        checkMailLabel.text = "Check your mailbox"
+        checkMailLabel.textColor = AppColors.white
+        checkMailLabel.font = UIFont.boldSystemFont(ofSize: 22)
+        
         /// Text field & Button
         emailTextField.placeholder = "Please enter your email"
         
         sendButton.setTitle("Send", for: .normal)
         sendButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
         sendButton.titleLabel?.textColor = AppColors.black
+        
+        doneButton.setTitle("Done", for: .normal)
                     
         /// Appearance
         [forgotPassImageView, forgotTitle, forgotDescription, sendButton].forEach {
@@ -81,7 +94,12 @@ class ForgotPasswordViewController: UIViewController {
             emailTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
             
             forgotTitle.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            forgotTitle.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            forgotTitle.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            
+            checkMailView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0),
+            checkMailView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
+            checkMailView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
+            checkMailView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0)
         ])
     }
 }
