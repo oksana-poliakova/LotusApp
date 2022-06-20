@@ -10,6 +10,8 @@
 		A11E90B0285DFECF00FA5D95 /* SignUpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E90AF285DFECF00FA5D95 /* SignUpCoordinator.swift */; };
 		A11E90B7285E0AA200FA5D95 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E90B6285E0AA200FA5D95 /* LoginViewController.swift */; };
 		A11E90B9285E0D1100FA5D95 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E90B8285E0D1100FA5D95 /* LoginCoordinator.swift */; };
+		A11E90BC2860560400FA5D95 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E90BB2860560400FA5D95 /* ForgotPasswordViewController.swift */; };
+		A11E90BE2860561A00FA5D95 /* ForgotPasswordCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E90BD2860561A00FA5D95 /* ForgotPasswordCoordinator.swift */; };
 		A13FFB332854D5CA004F6E5A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13FFB322854D5CA004F6E5A /* Coordinator.swift */; };
 		A13FFB352854D5D6004F6E5A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13FFB342854D5D6004F6E5A /* AppCoordinator.swift */; };
 		A13FFB372854E339004F6E5A /* WelcomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13FFB362854E339004F6E5A /* WelcomeCoordinator.swift */; };
@@ -32,6 +34,8 @@
 		A11E90AF285DFECF00FA5D95 /* SignUpCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCoordinator.swift; sourceTree = "<group>"; };
 		A11E90B6285E0AA200FA5D95 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A11E90B8285E0D1100FA5D95 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		A11E90BB2860560400FA5D95 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		A11E90BD2860561A00FA5D95 /* ForgotPasswordCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordCoordinator.swift; sourceTree = "<group>"; };
 		A13FFB322854D5CA004F6E5A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		A13FFB342854D5D6004F6E5A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		A13FFB362854E339004F6E5A /* WelcomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeCoordinator.swift; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 			children = (
 				A11E90B2285E092E00FA5D95 /* Welcome */,
 				A11E90B5285E0A1B00FA5D95 /* Login */,
+				A11E90BA286055DC00FA5D95 /* Forgot Password */,
 				A11E90B3285E093F00FA5D95 /* SignUp */,
 			);
 			path = Core;
@@ -106,6 +111,15 @@
 				A11E90B8285E0D1100FA5D95 /* LoginCoordinator.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		A11E90BA286055DC00FA5D95 /* Forgot Password */ = {
+			isa = PBXGroup;
+			children = (
+				A11E90BB2860560400FA5D95 /* ForgotPasswordViewController.swift */,
+				A11E90BD2860561A00FA5D95 /* ForgotPasswordCoordinator.swift */,
+			);
+			path = "Forgot Password";
 			sourceTree = "<group>";
 		};
 		A13FFB3A28560CE6004F6E5A /* Extensions */ = {
@@ -286,8 +300,10 @@
 				A13FFBFF28562466004F6E5A /* UIStackView+Extensions.swift in Sources */,
 				A11E90B0285DFECF00FA5D95 /* SignUpCoordinator.swift in Sources */,
 				A11E90B7285E0AA200FA5D95 /* LoginViewController.swift in Sources */,
+				A11E90BC2860560400FA5D95 /* ForgotPasswordViewController.swift in Sources */,
 				A15FFF2C285CEE2600D61898 /* RoundedTextField.swift in Sources */,
 				A1F475322854A20400C26658 /* AppColors.swift in Sources */,
+				A11E90BE2860561A00FA5D95 /* ForgotPasswordCoordinator.swift in Sources */,
 				A13FFB392854E4B0004F6E5A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

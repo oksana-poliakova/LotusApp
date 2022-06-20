@@ -1,13 +1,13 @@
 //
-//  LoginCoordinator.swift
+//  ForgotPasswordCoordinator.swift
 //  Lotus
 //
-//  Created by Oksana Poliakova on 18.06.2022.
+//  Created by Oksana Poliakova on 20.06.2022.
 //
 
 import UIKit
 
-final class LoginCoordinator: Coordinator {
+final class ForgotPasswordCoordinator: Coordinator {
     var navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {
@@ -15,11 +15,7 @@ final class LoginCoordinator: Coordinator {
     }
     
     func start() {
-        print("")
-    }
-    
-    func clickForgotPassword() {
-        let vc = ForgotPasswordViewController()
+        let vc = LoginViewController()
         navigationController.pushViewController(vc, animated: true)
     }
 }

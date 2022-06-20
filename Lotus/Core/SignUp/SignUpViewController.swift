@@ -18,7 +18,7 @@ class SignUpViewController: UIViewController {
     private let signupButton = MainAppButton()
     private let loginLabel = UILabel()
     private let loginButton = UIButton()
-    private lazy var signupFieldsStackView = UIStackView(arrangedSubviews: [emailTextField, passwordTextField, confirmPasswordTextField], axis: .vertical, spacing: 10, distribution: .fill, aligment: .fill)
+    private lazy var signupFieldsStackView = UIStackView(arrangedSubviews: [emailTextField, passwordTextField, confirmPasswordTextField], axis: .vertical, spacing: 15, distribution: .fill, aligment: .fill)
     private lazy var loginStackView = UIStackView(arrangedSubviews: [loginLabel, loginButton], axis: .horizontal, spacing: 10, distribution: .fill, aligment: .fill)
 
     // MARK: - Init

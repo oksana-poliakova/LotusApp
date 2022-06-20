@@ -20,15 +20,15 @@ class LoginViewController: UIViewController {
     private let needAccountLabel = UILabel()
     private let signupButton = UIButton()
     private let forgotPasswordLabel = UILabel()
-    private let clickButton = UIButton()
+    private let forgotButton = UIButton()
     
-    private lazy var textFieldsStackView = UIStackView(arrangedSubviews: [emailTextField, passwordTextField], axis: .vertical, spacing: 10, distribution: .fill, aligment: .fill)
+    private lazy var textFieldsStackView = UIStackView(arrangedSubviews: [emailTextField, passwordTextField], axis: .vertical, spacing: 15, distribution: .fill, aligment: .fill)
     
     private lazy var buttonStackView = UIStackView(arrangedSubviews: [loginButton, facebookButton], axis: .horizontal, spacing: 10, distribution: .fill, aligment: .fill)
     
-    private lazy var needAccountStackView = UIStackView(arrangedSubviews: [needAccountLabel, signupButton], axis: .horizontal, spacing: 10, distribution: .fill, aligment: .fill)
+    private lazy var needAccountStackView = UIStackView(arrangedSubviews: [needAccountLabel, signupButton], axis: .horizontal, spacing: 5, distribution: .fill, aligment: .fill)
     
-    private lazy var forgotPasswordStackView = UIStackView(arrangedSubviews: [forgotPasswordLabel, clickButton], axis: .horizontal, spacing: 10, distribution: .fill, aligment: .fill)
+    private lazy var forgotPasswordStackView = UIStackView(arrangedSubviews: [forgotPasswordLabel, forgotButton], axis: .horizontal, spacing: 5, distribution: .fill, aligment: .fill)
     
     // MARK: - Init
     
@@ -60,20 +60,30 @@ class LoginViewController: UIViewController {
         emailTextField.placeholder = "Please enter your email"
         passwordTextField.placeholder = "Please enter your password"
         
+        /// Buttons
+        signupButton.setTitle("Sign up", for: .normal)
+        forgotButton.setTitle("Click here", for: .normal)
+        
         loginButton.setTitle("Login", for: .normal)
         loginButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
         loginButton.titleLabel?.textColor = AppColors.black
         
+        forgotButton.addTarget(self, action: #selector(tappedForgotButton), for: .touchUpInside)
+        
         facebookButton.setImage(UIImage(named: "facebookLogo"), for: .normal)
+        
+        [signupButton, forgotButton].forEach {
+            $0.titleLabel?.textColor = AppColors.lightGray
+            $0.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
+        }
+        
+        /// Labels
+        needAccountLabel.text = "Do you need an account?"
+        forgotPasswordLabel.text = "Did you forget your password?"
         
         [needAccountLabel, forgotPasswordLabel].forEach {
             $0.textColor = AppColors.darkGray
             $0.font = UIFont.boldSystemFont(ofSize: 16)
-        }
-        
-        [signupButton, clickButton].forEach {
-            $0.titleLabel?.textColor = AppColors.lightGray
-            $0.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
         }
         
         /// Appearance
@@ -92,7 +102,7 @@ class LoginViewController: UIViewController {
             forgotPasswordStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             forgotPasswordStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
             
-            needAccountStackView.bottomAnchor.constraint(equalTo: forgotPasswordStackView.topAnchor, constant: -20),
+            needAccountStackView.bottomAnchor.constraint(equalTo: forgotPasswordStackView.topAnchor, constant: -5),
             needAccountStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             needAccountStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
             
@@ -111,5 +121,11 @@ class LoginViewController: UIViewController {
             emailTextField.heightAnchor.constraint(equalToConstant: 50),
             passwordTextField.heightAnchor.constraint(equalTo: emailTextField.heightAnchor),
         ])
+    }
+    
+    @objc func tappedForgotButton() {
+        guard let navigationController = navigationController else { return }
+        
+        LoginCoordinator(navigationController: navigationController).clickForgotPassword()
     }
 }
